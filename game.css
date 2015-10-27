@@ -1,0 +1,103 @@
+.background    { background: linear-gradient(to bottom, 
+	                         rgba(133,51,0,1) 0%,  
+	                         rgba(0,82,107,1) 57%,
+	                          rgba(137,247,129,1) 61%, 
+	                          rgba(25,61,102,1) 100%);
+                              table-layout: fixed;
+                               border-spacing: 0;   }
+.background td { padding: 0; 
+         }
+
+
+
+#dialogoverlay{
+				display:none;
+				opacity:8;
+				position:fixed;
+				top:0px;
+				left:0px;
+				background:#fff;
+				width:100%;
+				z-index:10; 
+
+}
+
+
+#dialogbox{ display:none;
+			position:fixed;
+			background:#000;
+			border-radius:7px;
+			width:550px;
+			z-index:10;
+
+}
+
+#dialogbox>div{background:#fff; margin:8px;}
+#dialogbox>div#dialoghead{background:#666; font-size:19px; padding:10px; color:#ccc;}
+#dialogbox>div#dialogbody{background:#333; font-size:19px; padding:20px; color:#fff;}
+#dialogbox>div#dialogfoot{background:#666; font-size:19px; padding:10px; text-align:right;}
+
+
+
+
+
+.lava          { background: #00ff33;
+                 box-shadow: -2px 0px 25px 9px rgba(138,245,128,0.4);
+                  }
+
+
+
+.wall          { background: linear-gradient(to 
+				             right, rgba(83,110,60,1) 0%, 
+				             rgba(8,8,7,1) 100%);
+				   box-shadow:-2px 0px 25px 9px rgba(138,245,128,0.2);
+				}
+
+.actor  { position: absolute; }
+
+.coin   { background: #ffff00; 
+          border-radius:10px 10px 10px 10px;
+          box-shadow:  -2px 0px 14px 8px rgba(245,245,101,0.40);
+         }
+
+.points       {background:linear-gradient(45deg, red , red, blue, 
+				rgba(3,74,255,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa0838', endColorstr='#034aff', GradientType=2 );;
+				
+	            height: 4px; 
+			    width: 4px; 
+			    padding:0;
+			    border-radius: 20px; 
+			    border-top: 4px solid red; 
+			    border-left: 2px solid blue; 
+			    border-right: 2px solid red; 
+			    border-bottom: 4px solid blue;
+
+                }
+
+.player { background: blue;
+		  border-radius: 10px 10px 5px 5px;
+		  box-shadow: -0px 5px 8px  2px rgba(0,0,0,0.4);
+
+	            }
+
+
+
+.game {
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  width:100%;
+  text-align: center;
+  position: relative;
+}
+
+.lost .player {
+  background:  #ff0000;
+  box-shadow: -2px 2px 14px 24px rgba(247,44,8,0.30);
+  
+}
+
+.won .player {
+  box-shadow:  -2px 0px 14px 8px rgba(250,226,15,1);
+}
